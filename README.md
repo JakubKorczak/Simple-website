@@ -5,7 +5,7 @@
 
 > Here is the [*DEMO*][DEMO].
 
-## Goal
+## Goals
 
 * Aim of this project is to practice and to show my skills of HTML and CSS.
 
@@ -18,4 +18,4 @@
 
 ## License & author
 This website is under the [*MIT license*][MIT license].
-**Author: Jakub Korczak **
+*Author: Jakub Korczak*

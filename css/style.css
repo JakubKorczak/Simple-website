@@ -35,6 +35,15 @@ body {
   clear: both;
 }
 
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  color: #30c0a8;
+}
+
 /*first bar with logo & nav*/
 
 header {
@@ -60,13 +69,53 @@ span {
   font-weight: bold;
 }
 
-.container__first li {
+.container__first > nav > ul > li {
   font-size: 14px;
   font-family: "raleway";
   font-weight: bold;
   text-transform: uppercase;
   display: inline-block;
-  margin-left: 32px;
+  margin-left: 50px;
+  position: relative; /*add*/
+}
+
+/*Pop-up menu*/
+.container__first > nav > ul > li > ul {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: -40px;
+  padding-top: 42px;
+  width: 122px;
+}
+
+.container__first > nav > ul > li > ul > li{
+  background-color: black;
+  color: #fff;
+  padding: 15px;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.container__first > nav > ul > li > ul::after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 22px;
+  left: 45px;
+  border: 10px solid black;
+  border-left-color: transparent;
+  border-top-color: transparent;
+  border-right-color: transparent;
+}
+
+.container__first > nav > ul > li:hover:first-child {
+  border-bottom: 2px solid #30c0a8;
+}
+
+.container__first > nav > ul > li:hover ul {
+  display: block;
 }
 
 .container__first ul {
@@ -80,14 +129,18 @@ article.middle__first {
 }
 
 .inside-main {
-  height: 400px;
+  height: 500px;
 }
 
 .sign {
   color: #30c0a8;
   font-size: 80px;
-  margin-top: 160px;
+  margin-top: 210px;
   text-decoration: none;
+}
+
+.sign:hover {
+  color: #008D75;
 }
 
 a.sign:first-child {
@@ -103,7 +156,7 @@ a.sign:last-child {
   display: inline-block;
   width: 450px;
   color: black;
-  margin-top: 100px;
+  margin-top: 172px;
 }
 
 .left-main h1 {
@@ -120,7 +173,7 @@ a.sign:last-child {
 img {
   float: left;
   display: inline-block;
-  margin-top: 50px;
+  margin-top: 122px;
 }
 
 .button {
