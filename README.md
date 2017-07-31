@@ -1,9 +1,8 @@
 # About project
-> Project shows simple use of HTML and CSS
+> Project shows simple use of HTML and CSS.
+## Demo
 
-## Demo of the website
-
-> Here is the [*DEMO*][DEMO].
+> Here is the [*DEMO*][DEMO] of the website.
 
 ## Goals
 
@@ -15,7 +14,8 @@
 <!-- Links -->
 [DEMO]: https://JakubKorczak.github.io
 [MIT license]: https://opensource.org/licenses/MIT
+[Jakub Korczak]: https://www.linkedin.com/in/jakub-korczak/
 
 ## License & author
 This website is under the [*MIT license*][MIT license].
-*Author: Jakub Korczak*
+*Author:* [*Jakub Korczak*][Jakub Korczak]
