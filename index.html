@@ -14,9 +14,9 @@
         <nav class="clearfix">
           <ul>
             <li>
-              <a href="#">o firmie</a>
+              <p>o firmie</p>
 
-                <ul>
+                <ul class="pop-up-menu">
                   <li>
                     <a href="#"> Aktualności </a>
                   </li>
@@ -46,8 +46,8 @@
 
         <a class="sign" href="#">&#60;</a>
 
-        <img src="images/black_chair.png" alt="black chair">
-          <div class="block__commercial--main">
+        <img src="images/black_chair.png" alt="black chair" class="clearfix">
+          <div class="block__commercial--main clearfix">
             <h1>sit <span>on</span> our <span>chair</span></h1>
             <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper.
                Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis,
@@ -58,7 +58,7 @@
                </div>
           </div>
 
-        <a class="sign" href="#">&#62;</a>
+        <a class="sign clearfix" href="#">&#62;</a>
 
       </div>
     </article>
@@ -82,12 +82,14 @@
               <div class="box--upper">
                 <p>basic plan</p>
                 <div class="box--circle">
-                  <p> 85 <sup>99</sup></p>
-                  <p>pln/msc</p>
+                  <div class="box--text-align">
+                    <p> 85 <sup>99</sup></p>
+                    <p>pln/msc</p>
+                  </div>
                 </div>
               </div>
-              <p class="bar">Zakup towaru + bonus</p>
-              <p class="bar">Serwis</p>
+              <div class="bar">Zakup towaru + bonus</div>
+              <div class="bar">Serwis</div>
               <div class="button box--button">
                 <a href="#">dołącz</a>
               </div>
@@ -95,16 +97,19 @@
 
           </li>
           <li>
-            <div class="box">
+            <div class="box clearfix">
               <div class="box--upper">
                 <p>standard plan</p>
                 <div class="box--circle">
-                  <p> 95 <sup>99</sup></p>
-                  <p>pln/msc</p>
+                  <div class="box--text-align">
+                    <p> 95 <sup>99</sup></p>
+                    <p>pln/msc</p>
+                  </div>
                 </div>
               </div>
-              <p class="bar">Zakup towaru + bonus</p>
-              <p class="bar">Serwis</p>
+              <div class="bar">Zakup towaru + bonus</div>
+              <div class="bar">Serwis</div>
+              <div class="bar">Gwarancja 5 lat</div>
               <div class="button box--button">
                 <a href="#">dołącz</a>
               </div>
@@ -116,8 +121,10 @@
               <div class="box--upper">
                 <p>advance plan</p>
                 <div class="box--circle">
-                  <p> 211 <sup>00</sup></p>
-                  <p>pln/msc</p>
+                  <div class="box--text-align">
+                    <p> 211 <sup id="last-sup">00</sup></p>
+                    <p>pln/msc</p>
+                  </div>
                 </div>
               </div>
               <p class="bar">Zakup towaru + bonus</p>

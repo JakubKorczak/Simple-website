@@ -41,10 +41,8 @@ a {
 }
 
 /*first bar with logo & nav*/
-
 header {
     background-color: black;
-    padding: 15px 0 13px 0;
     width: 100%;
 }
 
@@ -64,26 +62,46 @@ span {
     font-weight: bold;
 }
 
-.block__menu > nav > ul > li {
-    font-size: 14px;
-    font-weight: bold;
-    text-transform: uppercase;
+.block__menu a {
     display: inline-block;
-    margin-left: 50px;
-    position: relative; /*add*/
+    padding: 15px 0 13px 0;
 }
 
 .block__menu a:hover {
     color: #30c0a8;
 }
 
+.block__menu > nav > ul > li {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-left: 50px;
+}
+
+.block__menu > nav > ul > li:first-child {
+    padding-bottom: 0;
+}
+
+.block__menu > nav > ul > li:hover:first-child {
+    border-bottom: 2px solid #30c0a8;
+}
+
 /*Pop-up menu*/
+.block__menu ul {
+    list-style-type: none;
+}
+
+.pop-up-menu > li > a {
+    padding: 0;
+}
+
 .block__menu > nav > ul > li > ul {
     display: none;
     position: absolute;
     top: 0;
-    right: -40px;
-    padding-top: 42px;
+    right: 465px;
+    padding-top: 54px;
     width: 122px;
 }
 
@@ -100,7 +118,7 @@ span {
     width: 0;
     height: 0;
     position: absolute;
-    top: 22px;
+    top: 34px;
     left: 45px;
     border: 10px solid black;
     border-left-color: transparent;
@@ -108,20 +126,11 @@ span {
     border-right-color: transparent;
 }
 
-.block__menu > nav > ul > li:hover:first-child {
-    border-bottom: 2px solid #30c0a8;
-}
-
 .block__menu > nav > ul > li:hover ul {
     display: block;
 }
 
-.block__menu ul {
-    list-style-type: none;
-}
-
 /*commercial section*/
-
 article.block__commercial {
     background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(242, 242, 242, 1) 47%, rgba(208, 208, 215, 1) 100%);
 }
@@ -234,7 +243,6 @@ article.block__price {
 
 .block__price--box {
     list-style: none;
-    float: left;
 }
 
 .block__price--box > li {
@@ -307,9 +315,19 @@ article.block__price {
     text-transform: uppercase;
 }
 
-sup {
+.box--text-align {
+    position: absolute;
+    left:27px;
+}
+
+.box--text-align > p > sup {
     position: absolute;
     font-size: 14px;
+}
+
+#last-sup {
+    top: 30px;
+    left: 65px;
 }
 
 .bar:nth-child(2n) {
@@ -317,8 +335,9 @@ sup {
 }
 
 .bar {
-    display: block;
+    float: right;
     height: 45px;
+    width: 100%;
     background-color: rgb(241, 241, 241);
     color: rgb(166, 166, 166);
     text-align: center;
@@ -381,4 +400,13 @@ sup {
     background-color: #fff;
     border: 12px solid #30c0a8;
     box-shadow: 0 0 0px #fff;
+}
+
+.box:hover .bar {
+    background-color: rgb(228, 228, 228);
+}
+
+
+.box:hover .bar:nth-child(2n) {
+    background-color: #F1F1F1;
 }
