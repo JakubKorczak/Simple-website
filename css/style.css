@@ -90,6 +90,7 @@ span {
 /*Pop-up menu*/
 .block__menu ul {
     list-style-type: none;
+    position: relative;
 }
 
 .pop-up-menu > li > a {
@@ -100,7 +101,7 @@ span {
     display: none;
     position: absolute;
     top: 0;
-    right: 465px;
+    right: 188px;
     padding-top: 54px;
     width: 122px;
 }
