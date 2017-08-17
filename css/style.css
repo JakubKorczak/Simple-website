@@ -224,6 +224,60 @@ article.middle__second {
     height: 350px;
 }
 
+.advert__chair {
+  height: 223px;
+  width: 325px;
+  margin-left: 25px;
+  margin-top: 25px;
+  float: left;
+  background-color: red;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.advert__chair--text-bar {
+  height: 58px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  top: 148px;
+}
+
+.advert__chair--text-bar p {
+  color: black;
+  font-weight: bold;
+  border-bottom: 8px solid #30c0a8;
+  display: inline-block;
+  width: 128px;
+  margin-left: 20px;
+  margin-top: 15px;
+}
+
+.advert__chair:first-child {
+  background-image: url('../images/box1_img.jpg');
+}
+
+.advert__chair:nth-child(2n) {
+  background-image: url('../images/box2_img.jpg');
+}
+
+.advert__chair:nth-child(2n) p {
+  width: 138px;
+}
+
+.advert__chair:last-child {
+  height: 255px;
+  float: right;
+  margin-left: 0;
+}
+
+.advert__chair:hover {
+  background-size: 105%;
+  background-position: center;
+}
+
 /*Price section*/
 article.block__price {
     background-color: #f2f2f2;
