@@ -1,0 +1,38 @@
+.page-hero__nav {
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        list-style:none;
+        padding:0;
+        margin:0;
+        height:100%;
+    }
+
+    li {
+        height: 100%;
+    }
+
+    a {
+        font-size:14px;
+        text-transform: uppercase;
+        padding:0 20px;
+        text-decoration: none;
+        font-weight: bold;
+        color:#fff;
+        display: flex;
+        height:100%;
+        align-items: center;
+        justify-content: center;
+        transition: all .5s;
+
+        &:hover {
+            color: $color-main;
+        }
+    }
+};
+
+@media (max-width: 420px) {
+  .page-hero__nav {
+    margin: 0 auto;
+  }
+}

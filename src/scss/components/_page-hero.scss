@@ -1,0 +1,52 @@
+.page-hero {
+    height: 100vh;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+};
+.page-hero__top-bar {
+    background-color: #000;
+    height: 50px;
+    //width: 100%;
+    .container {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+};
+.page-hero__logo {
+    margin: 0;
+    height: 100%;
+    font-weight: 400;
+
+    a {
+        color: #fff;
+        height: 100%;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: all .5s;
+
+        &:hover {
+            color: $color-main;
+
+            span {
+                color: #fff;
+            }
+        }
+    }
+};
+.page-hero__logo--mark {
+    color: $color-main;
+    font-weight: 700;
+    padding: 0 3px;
+}
+
+@media (max-width: 420px) {
+  .page-hero__logo {
+    display: none;
+  }
+}

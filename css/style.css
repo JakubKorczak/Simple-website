@@ -41,6 +41,9 @@ a {
 }
 
 /*first bar with logo & nav*/
+.page-hero {
+    height: 100vh;
+}
 header {
     background-color: black;
     width: 100%;
